@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('checkMiddleware','MiddlewareController@index');
+Route::get('/home','MiddlewareController@index');
+Route::get('/about','MiddlewareController@about')->middleware('checkUser');

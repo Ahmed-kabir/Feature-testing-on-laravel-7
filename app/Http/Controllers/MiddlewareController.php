@@ -14,7 +14,7 @@ class MiddlewareController extends Controller
      */
     public function index()
     {
-        echo 'success';
+        echo 'index';
     }
 
     /**
@@ -22,9 +22,9 @@ class MiddlewareController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function about()
     {
-        //
+        echo "about";
     }
 
     /**
