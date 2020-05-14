@@ -17,6 +17,10 @@ class checkUser
     {
         if($request->age==20)
         {
+            $data = $request->session()->all();
+            echo '<pre>';
+            print_r($data);
+            echo '</pre>';
             return redirect('/home');
         }
     // echo "Middleware Works";

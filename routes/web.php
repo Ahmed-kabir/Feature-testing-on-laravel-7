@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 Route::get('/home','MiddlewareController@index');
 Route::get('/about','MiddlewareController@about')->middleware('checkUser');
+
+Route::get('/login','AdminController@login');
+Route::get('/register','AdminController@register');
